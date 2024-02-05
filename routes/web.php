@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
@@ -14,5 +15,8 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::resource('books', BookController::class);
+Route::patch('/reserver/{id}', [BookController::class,'reserver'])->name('reserver');
+Route::patch('/recuperer/{id}', [BookController::class,'recuperer'])->name('recuperer');
+
 
