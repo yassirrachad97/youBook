@@ -78,15 +78,7 @@ class BookController extends Controller
     session()->flash('message','book has deleted with succ');
     return redirect()->route("books.index");
     }
-    public function reserver($id)
-    {
-        $reserver=Book::findOrFail($id);
-        $reserver->reservation='1';
-        $reserver->save();
-        return redirect()->route('books.index');
-    }
-
-    public function recuperer($id)
+       public function recuperer($id)
     {
         $recuper=Book::findOrFail($id);
         $recuper->reservation='0';

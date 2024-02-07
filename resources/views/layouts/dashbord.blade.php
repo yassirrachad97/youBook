@@ -7,7 +7,68 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>youbook</title>
 </head>
+
 <body>
+
+  <div class="col-2 position-fixed d-flex flex-column justify-content-between" style="background-color: #f6f6f6; height: 100vh">
+    <div>
+
+        <a href="{{route('books.index')}}" class="material-symbols-outlined" style="text-decoration:none"><span style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   color :orange">You</span><span style="color :orange">auto_stories</span></a>
+
+      <hr class="mx-3" />
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #f6f6f6;">
+                statistiques
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a class="dropdown-item my-4" href="?uri=admin/statistique">voir les statistiques</a></li>
+
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="background-color: #f6f6f6;">
+                books
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a class="dropdown-item my-4" href="?uri=category">liste des book dispo</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="background-color: #f6f6f6;">
+                reservation
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a class="dropdown-item my-4" href="">book resrver</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+       
+        </div>
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <body>
   
     <nav class="navbar navbar-expand-lg navbar-light bg-light w-85">
         <div class="container-fluid">
@@ -65,22 +126,6 @@
         </div>
     </div>
   
-      
-      @yield('name')
+    </div>
 
-
-
-
-
-      <footer class="bg-body-tertiary text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-          © 2020 Copyright:
-          <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>    
-</body>
-</html>
+  </div>
