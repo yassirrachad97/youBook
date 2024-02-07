@@ -4,6 +4,7 @@ use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Reservationcontroller;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,7 @@ use App\Http\Controllers\Reservationcontroller;
 */
 
 Route::resource('books', BookController::class);
+Route::resource('login', UserController::class);
 Route::resource('reservation', Reservationcontroller::class);
 
 
