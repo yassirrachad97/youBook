@@ -18,7 +18,9 @@ use App\Http\Controllers\UserController;
 */
 
 Route::resource('books', BookController::class);
-Route::resource('login', UserController::class);
+Route::get('login',[UserController::class,"login"])->name("login");
+Route::get('regester',[UserController::class,"regester"])->name("regester");
+Route::post('singup',[UserController::class,"singup"])->name("singup");
 Route::resource('reservation', Reservationcontroller::class);
 
 
